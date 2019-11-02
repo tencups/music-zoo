@@ -1,4 +1,5 @@
 import React from "react"
+import { BrowserRouter, Route, Link } from "react-router-dom"
 import styled from "styled-components"
 
 const Content = styled("section")`
@@ -25,10 +26,46 @@ const Img = styled("img")`
   width: 60%;
   height: auto;
 `
+const Navbar = styled("div")`
+  position: fixed;
+  height: 100px;
+  top: 0;
+  left: 0;
+  right: 0;
+  width: 100%;
+  text-decoration: none;
+`
+const NavItemsWrapper = styled("div")`
+  padding: 0 144px;
+  height: 100%;
+  color: black;
+  padding-right: 0;
+  margin: 0 auto;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  margin-right: 6vw;
+`
 
+const NavItem = styled("p")`
+  font-family: "Baloo Bhai", cursive;
+  text-decoration: none;
+  font-size: 3em;
+  :hover {
+    color: red;
+  }
+`
 const Instrument = props => {
   return (
     <>
+      <Navbar>
+        <NavItemsWrapper>
+          <Link to="/">
+            <NavItem>Home</NavItem>
+          </Link>
+        </NavItemsWrapper>
+      </Navbar>
       <Content>
         <ImageSection>
           <Img src={props.artists} />
@@ -39,6 +76,20 @@ const Instrument = props => {
           <h3 style={{ marginTop: "-10px" }}>{"Type: " + props.type}</h3>
           <h1 style={{ fontWeight: "500" }}>{props.desc}</h1>
           <h1 style={{ fontWeight: "500" }}>{props.uses}</h1>
+
+          {props.songs.map(({ songTitle, link }) => (
+            <a href={link}>
+              <h1
+                stlye={{
+                  fontStyle: "bold",
+                  textDecoration: "none",
+                  color: "black"
+                }}
+              >
+                {songTitle}
+              </h1>
+            </a>
+          ))}
         </DescSection>
       </Content>
     </>
