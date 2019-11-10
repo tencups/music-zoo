@@ -28,6 +28,10 @@ const Desc = styled("h3")`
   font-size: 3em;
   text-align: center;
   font-family: "Baloo Bhai", cursive;
+color: #000000;
+background: #FFFFFF;
+text-shadow: 2px 2px 0 #bcbcbc, 4px 4px 0 #9c9c9c;
+margin-top: -10px;
 `
 
 const Img = styled("img")`
