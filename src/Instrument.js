@@ -5,11 +5,14 @@ import styled from "styled-components"
 const Content = styled("section")`
   
   display: flex;
-background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
   height: 100vh;
   justify-content: center;
   align-items: center;
 `
+const Container = styled("div")`
+background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+`
+
 const ImageSection = styled("section")`
   display: flex;
   justify-content: center;
@@ -61,6 +64,7 @@ const NavItem = styled("p")`
 const Instrument = props => {
   return (
     <>
+    <Container>
       <Navbar>
         <NavItemsWrapper>
           <Link to="/">
@@ -94,6 +98,7 @@ const Instrument = props => {
           ))}
         </DescSection>
       </Content>
+</Container>
     </>
   )
 }
