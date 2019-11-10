@@ -18,6 +18,9 @@ const Logo = styled("h1")`
   text-align: center;
   font-size: 5em;
   font-family: "Baloo Bhai", cursive;
+color: #FFFFFF;
+
+text-shadow: 4px 3px 0px #7A7A7A;
 `
 
 const Desc = styled("h3")`
