@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter, Route, Link } from "react-router-dom"
 import styled from "styled-components"
-import "./Instrument.css"
+
 
 const Content = styled("section")`
   
@@ -13,7 +13,7 @@ const Content = styled("section")`
 const Container = styled("div")`
 height:100%;
 
-background-image: linear-gradient(to right, #f78ca0 0%, #f9748f 19%, #fd868c 60%, #fe9a8b 100%);
+
 `
 
 const ImageSection = styled("section")`
