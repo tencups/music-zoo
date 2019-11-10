@@ -1,7 +1,7 @@
 import React from "react"
 import { BrowserRouter, Route, Link } from "react-router-dom"
 import styled from "styled-components"
-import "./Instrument
+import "./Instrument.css"
 
 const Content = styled("section")`
   
