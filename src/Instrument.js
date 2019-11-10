@@ -3,7 +3,9 @@ import { BrowserRouter, Route, Link } from "react-router-dom"
 import styled from "styled-components"
 
 const Content = styled("section")`
+  
   display: flex;
+background-image: linear-gradient(to right, #4facfe 0%, #00f2fe 100%);
   height: 100vh;
   justify-content: center;
   align-items: center;
