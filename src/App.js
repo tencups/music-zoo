@@ -185,7 +185,7 @@ const App = () => {
       src: "/images/instruments/clarinet.jpg",
       artists: "/images/artists/sangyoonkim.jpg",
       artistdesc:
-        "Clarinetist Sang Yoon Kim, Sain Paul Chamber Orchestra Principal Clarinet",
+        "Clarinetist Sang Yoon Kim, Saint Paul Chamber Orchestra Principal Clarinet",
       type: "Woodwind",
       title: "Clarinet",
       desc:
